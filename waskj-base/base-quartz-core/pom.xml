@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.waskj.base</groupId>
+		<artifactId>waskj-base</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>base-quartz-core</artifactId>
+	<name>base-quartz-core</name>
+	<dependencies>
+		<dependency>
+			<groupId>com.waskj.base</groupId>
+			<artifactId>base-consumer-core</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- scheduler begin -->
+		<dependency>
+			<groupId>org.quartz-scheduler</groupId>
+			<artifactId>quartz</artifactId>
+			<version>${quartz.version}</version>
+
+			<exclusions>
+				<exclusion>
+					<artifactId>slf4j-api</artifactId>
+					<groupId>org.slf4j</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<!-- scheduler end -->
+	</dependencies>
+</project>

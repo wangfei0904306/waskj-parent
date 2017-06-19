@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.waskj</groupId>
+		<artifactId>waskj-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>com.waskj.base</groupId>
+	<artifactId>waskj-base</artifactId>
+	<packaging>pom</packaging>
+	<name>waskj-base</name>
+	<modules>
+		<module>base-api-core</module>
+		<module>base-consumer-core</module>
+		<module>base-domain-core</module>
+		<module>base-provider-core</module>
+		<module>base-util-core</module>
+		<module>base-mybatis-plus</module>
+		<module>base-workflow-core</module>
+		<module>base-quartz-core</module>
+        <module>base-shiro-core</module>
+		<module>base-shiro-ext-jwt</module>
+        <module>base-microservice-core</module>
+		<module>base-microservice-eureka</module>
+        <module>base-microservice-spring</module>
+        <module>base-microservice-hessian</module>
+        <module>base-chart-core</module>
+    </modules>
+</project>
